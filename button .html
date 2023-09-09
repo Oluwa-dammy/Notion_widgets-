@@ -1,0 +1,22 @@
+<button onclick="copyText()">Copy</button>
+
+<script>
+function copyText() {
+  // Get the div element
+  var divElement = ""Can you provide me with insights into the current market presence of our competitors in (your industry)? What is their customer satisfaction rating, and are there any common pain points or strengths that customers frequently mention in reviews?"
+";
+
+  // Create a range object
+  var range = document.createRange();
+
+  // Select the contents of the div element
+  range.selectNode(divElement);
+
+  // Add the range to the user's selection
+  window.getSelection().addRange(range);
+
+  // Copy the selected text to the clipboard
+  document.execCommand("copy");
+
+}
+</script>
